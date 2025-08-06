@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PopChoice</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <img id="popcorn" src="Copilot_20250629_201743.png">
+        <h1 id="header">PopChoice</h1>
+        
+        <div id="loadingSpinner" style="display:none;">
+            <div class="spinner"></div>
+        </div>
+        <div id="intro">
+            <p>Welcome to PopChoice! The app works by asking some questions regarding the type of movie you wish to watch and returns some movie recomendations based on the answers to those questions. To start off, how long do you have? </p>
+            <input id="time" placeholder="3 hours...">
+            <button id="start">Start!</button>
+
+        </div>
+        <div id="block">
+            <p>What is your favourite movie and why?</p>
+            <textarea id="favorite" placeholder="My favourite movie is..."></textarea>
+   
+     
+            <p>Are you in the mood for something new or a classic?</p>
+            <div class="option-group" id="genre">
+                <div class="option" id="new">New</div>
+                <div class="option" id="">Classic</div>
+            </div>
+
+    
+        
+            <p>What are you in the mood for?</p>
+            <div class="option-group" id="mood">
+                <div class="option" id="">Fun</div>
+                <div class="option" id="">Serious</div>
+                <div class="option" id="n">Inspiring</div>
+                <div class="option" id="">Scary</div>
+            </div>
+            <button id="submitBtn">Let's Go!</button>
+        </div>
+
+        <div id="movie_display">
+            <h1 id="movie_title">Barbie(2020)</h1>
+            <img id="movie_image" src="Copilot_20250629_201743.png">
+            <p id="movie_description">This is a movie about barbie</p>
+
+            <button id="finalButton">Next Movie</button>
+        </div>
+
+        
+        <script type="module" src="main.js"></script>
+    </body>
+</html> 

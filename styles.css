@@ -1,0 +1,136 @@
+html{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(9, 9, 53);
+    
+}
+h1, p{
+    font-family: 'Tahoma';
+}
+#block{
+    width: 30%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+#intro{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 20px;
+    margin-top: 100px;
+
+}
+#time, #number{
+    font-family: Tahoma;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-size: 15px;
+    backdrop-filter: blur(8px);
+    width: 75%
+}
+
+
+button{
+    margin: 40px;
+    width: 75%;
+    cursor: pointer;
+    background-color: rgb(75, 173, 75);
+    border-radius: 5px;
+    font-family: 'Tahoma';
+    height: 4vh;
+    transition: background-color 0.3s ease;
+    border: none;
+    box-shadow: 3px 3px black;
+
+}
+button:hover{
+    background-color: Green;
+
+
+}
+#popcorn{
+    height: 18vh;
+}
+
+textarea{
+    font-family: Tahoma;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-size: 15px;
+    backdrop-filter: blur(8px);
+    outline: none;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    resize: vertical;
+    height: 7vh;
+    width: 25%;
+    min-width: 200px;
+    
+}
+.option-group{
+    display:flex;
+    
+    
+}
+.option{
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #6a8dfc;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.option:hover{
+    background-color:rgb(21, 20, 22)
+}
+.selected{
+    background: rgb(21,20,22);
+}
+
+#movie_display{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Tahoma';
+    flex-direction: column;
+    width: 45%;
+    margin: 0 auto;
+    
+}
+#movie_image{
+    width: 70%;
+}
+
+#finalButton{
+    display: 'none';
+}
+
+.spinner {
+  border: 6px solid #eee;
+  border-top: 6px solid #333;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
